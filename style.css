@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+.logo {
+    width: 50px;
+}
+header ul li {
+    display: inline-block;
+    /* color: white; */
+   list-style: none;
+}
+ul a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    
+    }
+.content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 80%;
+    margin:60px auto;
+}
+.content .text {
+    width:40% ;
+    color: white;
+    
+}
+.content .text h2 {
+    font-size: calc(1rem + 5px);
+    text-transform: uppercase;
+}
+.content .text p {
+    font-size: calc(0.7rem + 5px);
+    margin: 15px 0;
+}
+.content .text button {
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+.content .text a {
+    text-decoration: none;
+    color: black;
+}
+.content .image {
+    width: 30%;
+}
+.content .image img {
+    width: 180px;
+}
+.icons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.icons img { width: 65px;transition: 0.5s;
+cursor: pointer;}
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:695px) {
+    .icons img{
+        width: 60px;
+        margin-top: 30px;
+    }
+    .content .image img{
+        width: 160px;
+    }
+}
+@media screen and (max-width:645px) {
+    .icons img{
+        width: 50px;
+        margin-top: 30px;
+    }
+    header{
+        font-size: calc(1rem + 5px);
+    }
+    header ul a {margin: 0 8px !important;}
+}
+@media screen and (max-width:545px) {
+    .icons img{
+        width: 40px;
+       
+    }
+    header{
+        font-size: calc(0.7rem + 5px);
+    }
+   
+}
+
+@media screen and (max-width:450px) {
+    .content .image img{
+        width: 100px;
+    }
+    header{
+        font-size: calc(0.5rem + 5px);
+    }
+    .icons{
+        top: 70%;
+        left: 80%;
+        width: 100%;
+        margin: 2px auto;
+    }
+    .icons img {
+        width: 35px;
+        margin: 0;
+        left: 50%;
+        margin: 0px;
+        margin-top: 10px;
+        
+       
+    }
+}
